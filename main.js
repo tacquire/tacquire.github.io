@@ -134,6 +134,7 @@ function initTerminalCLI() {
           <p>  • <span class="highlight-cmd">experience</span>   : Summary of SDE II & Senior Dev roles</p>
           <p>  • <span class="highlight-cmd">projects</span>     : Key architecture & research accomplishments</p>
           <p>  • <span class="highlight-cmd">utils</span>        : Developer tools & self-hosted workbench</p>
+          <p>  • <span class="highlight-cmd">blog</span>         : Technical articles & architecture deep dives</p>
           <p>  • <span class="highlight-cmd">certs</span>        : List verified professional credentials</p>
           <p>  • <span class="highlight-cmd">contact</span>      : Phone, email, location & social handles</p>
           <p>  • <span class="highlight-cmd">github</span>       : Open GitHub profile (github.com/tacquire)</p>
@@ -150,6 +151,18 @@ function initTerminalCLI() {
           <p>  • <strong>FreshRSS:</strong> Self-hosted RSS news aggregator & feed reader dashboard</p>
           <p>  • <strong>IT Tools:</strong> Data encoding, JWT inspector, JSON & SQL formatters</p>
           <p>  • <strong>Agentic AI Workbench:</strong> MCP tools, local Ollama models & prompt playground</p>
+        `;
+        break;
+
+      case 'blog':
+      case 'blogs':
+      case 'article':
+      case 'articles':
+        responseHTML = `
+          <p>📝 <strong>Featured Technical Articles & Blog:</strong></p>
+          <p>  1. <strong>Building Scalable Event-Driven Microservices with Spring Boot & Kafka</strong> [6 min read]</p>
+          <p>  2. <strong>Designing Agentic AI Applications with Model Context Protocol (MCP)</strong> [8 min read]</p>
+          <p>  3. <strong>Optimizing Backend Latency: Redis Caching & Hibernate Query Tuning</strong> [5 min read]</p>
         `;
         break;
 
