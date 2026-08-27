@@ -1484,3 +1484,90 @@ h1, h2, h3, h4, h5, h6 {
     left: 2px;
   }
 }
+
+/* WORKBENCH & UTILS SECTION */
+.utils-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.75rem;
+}
+
+.util-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.util-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.util-icon-badge {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.rss-icon {
+  background: rgba(249, 115, 22, 0.15);
+  color: #f97316;
+}
+
+.tools-icon {
+  background: rgba(56, 189, 248, 0.15);
+  color: var(--primary);
+}
+
+.ai-icon {
+  background: rgba(129, 140, 248, 0.15);
+  color: var(--secondary);
+}
+
+.util-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+}
+
+.util-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.util-desc {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+.util-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--text-main);
+}
+
+.util-features span i {
+  color: var(--accent);
+  margin-right: 0.4rem;
+}
+
+.util-footer {
+  margin-top: auto;
+}
+

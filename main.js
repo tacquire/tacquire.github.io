@@ -133,10 +133,21 @@ function initTerminalCLI() {
           <p>  • <span class="highlight-cmd">skills</span>       : View core backend, cloud & AI tech stack</p>
           <p>  • <span class="highlight-cmd">experience</span>   : Summary of SDE II & Senior Dev roles</p>
           <p>  • <span class="highlight-cmd">projects</span>     : Key architecture & research accomplishments</p>
+          <p>  • <span class="highlight-cmd">utils</span>        : Developer tools & self-hosted workbench</p>
           <p>  • <span class="highlight-cmd">certs</span>        : List verified professional credentials</p>
           <p>  • <span class="highlight-cmd">contact</span>      : Phone, email, location & social handles</p>
           <p>  • <span class="highlight-cmd">github</span>       : Open GitHub profile (github.com/tacquire)</p>
           <p>  • <span class="highlight-cmd">clear</span>        : Clear terminal output</p>
+        `;
+        break;
+
+      case 'utils':
+      case 'workbench':
+        responseHTML = `
+          <p>🧰 <strong>Developer Workbench & Self-Hosted Utilities:</strong></p>
+          <p>  • <strong>FreshRSS:</strong> Self-hosted RSS news aggregator & feed reader (rss.shivamashtikar.com)</p>
+          <p>  • <strong>IT Tools:</strong> Data encoding, JWT inspector, JSON & SQL formatters (it.shivamashtikar.com)</p>
+          <p>  • <strong>Agentic AI Workbench:</strong> MCP tools, local Ollama models & prompt playground</p>
         `;
         break;
 
