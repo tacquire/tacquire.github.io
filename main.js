@@ -147,7 +147,7 @@ function initTerminalCLI() {
           <p>  • <strong>Cloud & DevOps:</strong> Azure, AWS, Kubernetes (K8s), Docker, CI/CD, Maven, Git</p>
           <p>  • <strong>AI / ML:</strong> Agentic AI, AI-native Applications, Claude Code, Cursor, Ollama, MCP</p>
           <p>  • <strong>Databases & Caching:</strong> PostgreSQL, MongoDB, Redis Caching, Kafka, Neo4j Graph DB</p>
-          <p>  • <strong>Security:</strong> RBAC, ABAC, Infosec Compliance, API Rate Limiting</p>
+          <p>  • <strong>Security:</strong> Spring Security, JWT, RBAC, ABAC, Infosec Compliance, API Rate Limiting</p>
         `;
         break;
 
