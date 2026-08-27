@@ -301,10 +301,9 @@ window.handleContactSubmit = function () {
 
   showToast(`Opening your email client to send message to mishra.pankaj942@gmail.com...`);
 
-  setTimeout(() => {
-    window.location.href = mailtoUrl;
-    document.getElementById('contact-form').reset();
-  }, 500);
+  // Launch synchronously within user click handler so browser does not block it
+  window.location.href = mailtoUrl;
+  document.getElementById('contact-form').reset();
 };
 
 /* ==========================================================================
