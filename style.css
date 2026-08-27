@@ -363,6 +363,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.25rem;
   color: var(--text-main);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .logo-symbol {
