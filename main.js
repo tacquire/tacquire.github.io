@@ -289,11 +289,22 @@ function showToast(message, isError = false) {
   }, 3000);
 }
 
-/* Global contact form submit helper */
+/* Global contact form submit helper — Direct Mailto Pre-fill */
 window.handleContactSubmit = function () {
-  const name = document.getElementById('contact-name').value;
-  showToast(`Thank you, ${name}! Message sent successfully.`);
-  document.getElementById('contact-form').reset();
+  const name = document.getElementById('contact-name').value.trim();
+  const email = document.getElementById('contact-email').value.trim();
+  const subject = document.getElementById('contact-subject').value.trim();
+  const message = document.getElementById('contact-message').value.trim();
+
+  const formattedBody = `Hi Pankaj,\n\n${message}\n\n---\nSender Name: ${name}\nSender Email: ${email}`;
+  const mailtoUrl = `mailto:mishra.pankaj942@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(formattedBody)}`;
+
+  showToast(`Opening your email client to send message to mishra.pankaj942@gmail.com...`);
+
+  setTimeout(() => {
+    window.location.href = mailtoUrl;
+    document.getElementById('contact-form').reset();
+  }, 500);
 };
 
 /* ==========================================================================
