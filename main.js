@@ -207,7 +207,7 @@ function initTerminalCLI() {
           <p>  • Email    : mishra.pankaj942@gmail.com</p>
           <p>  • Phone    : +91 8669531868</p>
           <p>  • GitHub   : https://github.com/tacquire/</p>
-          <p>  • LinkedIn : https://linkedin.com/in/PankaJ942</p>
+          <p>  • LinkedIn : https://www.linkedin.com/in/pankaj942</p>
           <p>  • Location : Mumbai / Pune / Bangalore, India</p>
         `;
         break;
