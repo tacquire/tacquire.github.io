@@ -148,8 +148,8 @@ function initTerminalCLI() {
       case 'tools':
         responseHTML = `
           <p>🧰 <strong>Developer Workbench & Self-Hosted Utilities:</strong></p>
-          <p>  • <strong>FreshRSS:</strong> Self-hosted RSS news aggregator & feed reader dashboard</p>
-          <p>  • <strong>IT Tools:</strong> Data encoding, JWT inspector, JSON & SQL formatters</p>
+          <p>  • <strong>FreshRSS:</strong> Self-hosted RSS news aggregator & feed reader (https://rss.shivamashtikar.com)</p>
+          <p>  • <strong>IT Tools:</strong> Data encoding, JWT inspector, JSON & SQL formatters (https://it.shivamashtikar.com)</p>
           <p>  • <strong>Agentic AI Workbench:</strong> MCP tools, local Ollama models & prompt playground</p>
         `;
         break;
