@@ -243,7 +243,7 @@ function initSkillsFilter() {
 
       skillCards.forEach(card => {
         const category = card.getAttribute('data-category');
-        if (filterValue === 'all' || category === filterValue) {
+        if (filterValue === 'all' || (category && category.includes(filterValue))) {
           card.classList.remove('hidden');
         } else {
           card.classList.add('hidden');
@@ -281,7 +281,7 @@ function showToast(message, isError = false) {
   if (isError) toast.style.borderColor = '#ff5f56';
 
   toast.innerHTML = `<i class="${isError ? 'fa-solid fa-circle-exclamation' : 'fa-solid fa-circle-check'}" style="color:${isError ? '#ff5f56' : 'var(--accent)'}"></i> ${escapeHtml(message)}`;
-  
+
   container.appendChild(toast);
 
   setTimeout(() => {
@@ -290,7 +290,7 @@ function showToast(message, isError = false) {
 }
 
 /* Global contact form submit helper */
-window.handleContactSubmit = function() {
+window.handleContactSubmit = function () {
   const name = document.getElementById('contact-name').value;
   showToast(`Thank you, ${name}! Message sent successfully.`);
   document.getElementById('contact-form').reset();
