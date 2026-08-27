@@ -558,24 +558,25 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-/* Code Preview Window */
+/* Code Preview Window (Always Dark IDE Theme in both Dark & Light Mode) */
 .code-window {
-  background: #0d1117;
-  border: 1px solid var(--border-glass);
+  background: #0d1117 !important;
+  color: #e6edf3 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-glass);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   font-family: var(--font-mono);
   font-size: 0.85rem;
 }
 
 .code-header {
-  background: #161b22;
+  background: #161b22 !important;
   padding: 0.75rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .window-buttons {
@@ -594,34 +595,39 @@ h1, h2, h3, h4, h5, h6 {
 .maximize { background: #27c93f; }
 
 .window-title {
-  color: var(--text-muted);
+  color: #8b949e !important;
   font-size: 0.8rem;
 }
 
 .window-badge {
   font-size: 0.7rem;
-  color: var(--accent);
-  background: rgba(16, 185, 129, 0.1);
-  padding: 2px 6px;
+  color: #38bdf8 !important;
+  background: rgba(56, 189, 248, 0.15) !important;
+  padding: 2px 8px;
   border-radius: 4px;
 }
 
 .code-body {
   padding: 1.25rem;
   overflow-x: auto;
+  background: #0d1117 !important;
+  color: #e6edf3 !important;
 }
 
-.code-body pre {
+.code-body pre,
+.code-body code {
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.6;
+  color: #e6edf3 !important;
+  font-family: var(--font-mono);
 }
 
 /* Syntax Highlighting */
-.token-keyword { color: #ff7b72; }
-.token-class { color: #ffa657; }
-.token-annotation { color: #d2a8ff; }
-.token-string { color: #a5d6ff; }
-.token-function { color: #79c0ff; }
+.token-keyword { color: #ff7b72 !important; font-weight: 600; }
+.token-class { color: #ffa657 !important; font-weight: 600; }
+.token-annotation { color: #d2a8ff !important; }
+.token-string { color: #a5d6ff !important; }
+.token-function { color: #79c0ff !important; }
 
 /* ABOUT SECTION */
 .about-grid {
